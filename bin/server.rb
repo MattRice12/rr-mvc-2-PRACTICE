@@ -22,6 +22,12 @@ module App
       { message: "eehhh tweet", id: 4},
     ]
   end
+
+  def App.posts
+    @posts ||= [
+      Post.new("OMG", "Tinyteen16", "OMG YOU GUYS SUCK", @published_field)
+    ]
+  end
 end
 
 system('clear')
